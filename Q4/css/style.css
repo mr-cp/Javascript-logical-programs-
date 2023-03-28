@@ -1,0 +1,58 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conatiner {
+    height: 400px;
+    width: 600px;
+    background-color: darkcyan;
+}
+
+#div_inp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+
+#div_out {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#show_btn {
+    height: 30px;
+    width: 250px;
+    margin: 8px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 8px;
+
+}
+
+
+#input_name {
+    height: 30px;
+    width: 250px;
+
+}
+
+p {
+    font-size: 48px;
+    font-family: monospace;
+}
