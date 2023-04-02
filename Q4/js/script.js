@@ -1,26 +1,47 @@
-let input_name = document.querySelector('#input_name')
-let btn = document.querySelector("#show_btn")
-let vowel_out = document.querySelector("#vowel")
-let space_out = document.querySelector("#space")
-let length_out = document.querySelector("#length")
+const submit_btn = document.querySelector('#submit_btn')
+const name1 = document.querySelector('#name1')
+const address = document.querySelector('#add1')
+const dob = document.querySelector('#dob1')
+const gender = document.querySelector('#gender1')
+const phone = document.querySelector('#phone1')
+const email = document.querySelector('#email1')
 
-btn.addEventListener('click', () => {
-    let name1 = input_name.value
-    let vowels = false
-    let spacecount = 0
-    let length_v = 0
+const div_change = document.querySelector('.div_right')
 
-    for (let i = 0; i < name1.length; i++) {
-        if (name1[i] == 'a' || name1[i] == 'e' || name1[i] == 'i' || name1[i] == 'o' || name1[i] == 'u' || name1[i] == 'A' || name1[i] == 'E' || name1[i] == 'I' || name1[i] == 'O' || name1[i] == 'U') {
-            vowels = true;
-        }
-        if (name1[i] == ' ') {
-            spacecount++;
-        }
-        length_v++;
+let color_bg = ["red", "yellow", "blue", "green", "black", "white"]
+
+
+submit_btn.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    const name_inp = document.querySelector('#name').value
+    const address_inp = document.querySelector('#add').value
+    const dob_inp = document.querySelector('#dob').value
+    const phone_inp = document.querySelector('#phone').value
+    const email_inp = document.querySelector('#email').value
+
+    if (document.getElementById('female-radio').checked) {
+        gender_inp = document.getElementById('female-radio').value;
+    }
+    else {
+        gender_inp = document.getElementById('male-radio').value;
     }
 
-    vowel_out.innerText = "vowel:" + vowels
-    space_out.innerText = "space:" + spacecount
-    length_out.innerText = "length:" + length_v
+
+    name1.innerText = "name:" + name_inp;
+    address.innerText = "address:" + address_inp
+    dob.innerText = "DOB:" + dob_inp
+    gender.innerText = "gender:" + gender_inp
+    phone.innerText = "phone:" + phone_inp
+    email.innerText = "email:" + email_inp
+})
+
+
+div_change.addEventListener('mouseover', () => {
+
+
+    const d = Math.floor(Math.random() * 6)
+
+    div_change.style.color = color_bg[d]
+
 })
