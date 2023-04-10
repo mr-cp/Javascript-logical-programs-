@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#image {
+    height: 400px;
+    width: 400px;
+}
+
+#btn {
+    background-color: black;
+    color: white;
+
+    height: 30px;
+    width: 50px;
+    margin: 16px;
+
+}
