@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <table class="tab">
+
+            <tr>
+                <td class="row"><label for="name">Name</label></td>
+                <td class="row"><input class="inp block" type="text" id="name" placeholder="enter your name"></td>
+
+            </tr>
+            <tr>
+                <td class="row"><label for="address">address</label></td>
+                <td class="row"><textarea id="add" cols="20" rows="4" class="adr"></textarea></td>
+
+            </tr>
+            <tr>
+                <td class="row"> <label for="DOB">DOB</label></td>
+                <td class="row"> <input type="date" id="dob"></td>
+
+            <tr>
+                <td class="row"><label name="gender">Gender: </label></td>
+                <td class="row"><input id="male-radio" type="radio" name="gender" value="male" checked="">
+                    <label for="male-radio">Male</label>
+
+                    <input id="female-radio" type="radio" name="gender" value="female" checked="checked">
+                    <label for="female-radio">Female</label>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="row"><label for="phone">Phone</td>
+                <td class="row"><input class="inp block" type="tel" id="phone"></td>
+
+            </tr>
+            <tr>
+                <td class="row"> <label for="email">Email</label></td>
+                <td class="row"><input class="inp block" type="email" placeholder="@gmail.com" id="email"></td>
+                <td class="row">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="row"><button class="btn" id="submit_btn">submit</button></td>
+                <td class="row"> <button class="btn" id="reset_btn">reset</button></td>
+
+            </tr>
+
+
+
+
+
+
+        </table>
+    </div>
+    <div class="container_right">
+        <div id="div_out" class="output_div"></div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

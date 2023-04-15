@@ -1,0 +1,96 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    margin: 36px;
+    background-color: rgba(0, 0, 0, 0.548);
+
+}
+
+.container {
+    height: 600px;
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 56, 56);
+    border-radius: 8px;
+
+}
+
+.row {
+    padding: 16px;
+
+
+}
+
+.output_div {
+    margin: 16px;
+
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.btn {
+
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+
+.block {
+    height: 30px;
+    width: 175px;
+
+
+}
+
+.container_right {
+
+    height: 600px;
+    width: 1000px;
+    background-color: rgb(63, 56, 56);
+    margin-left: 36px;
+    border-radius: 8px;
+
+
+}
+
+.btn_dlt {
+
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-left: 12px;
+
+}
+
+#div_out {
+    display: flex;
+    flex-direction: column;
+}
